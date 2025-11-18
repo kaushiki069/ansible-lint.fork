@@ -1,2 +1,0 @@
-- name: A playbook without expected yml or yaml extension
-  hosts: localhost

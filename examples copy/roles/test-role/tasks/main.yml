@@ -1,4 +1,0 @@
----
-- name: Shell instead of command
-  ansible.builtin.shell:
-    cmd: echo hello world

@@ -1,3 +1,0 @@
-- ansible.builtin.debug:
-    msg: foo
-  no_log: 123 # <-- bad

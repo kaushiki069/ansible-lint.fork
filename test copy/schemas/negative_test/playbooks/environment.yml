@@ -1,3 +1,0 @@
----
-- hosts: localhost
-  environment: "{{ foo }}-123" # <- invalid only a full jinja string is allowed, or a list of strings

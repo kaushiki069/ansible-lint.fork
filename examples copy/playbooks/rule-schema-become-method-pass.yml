@@ -1,5 +1,0 @@
----
-- name: Test 'become_method' plugin validity
-  hosts: localhost
-  become: true
-  become_method: ansible.builtin.sudo

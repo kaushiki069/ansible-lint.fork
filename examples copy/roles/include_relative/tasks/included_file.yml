@@ -1,4 +1,0 @@
----
-- name: included_file | Sample debug task
-  ansible.builtin.debug:
-    msg: "was found & included"

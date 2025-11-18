@@ -1,2 +1,0 @@
----
-foo: bar # should fail meta-runtime schema validation

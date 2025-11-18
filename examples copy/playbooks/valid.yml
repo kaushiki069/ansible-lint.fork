@@ -1,4 +1,0 @@
----
-- name: Minimal test play
-  hosts: localhost
-  tasks: []

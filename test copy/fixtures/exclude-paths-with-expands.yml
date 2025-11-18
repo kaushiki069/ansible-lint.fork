@@ -1,5 +1,0 @@
----
-exclude_paths:
-  - ~/.ansible/roles
-  - $HOME/.ansible/roles
-# vim: et:sw=2:syntax=yaml:ts=2:

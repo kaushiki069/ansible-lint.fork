@@ -1,1 +1,0 @@
-../../src/ansiblelint/rules/playbook_extension.md

@@ -1,3 +1,0 @@
----
-- name: Invalid syntax for import (coverage)
-  ansible.builtin.import_tasks: wrong=imported_tasks.yml

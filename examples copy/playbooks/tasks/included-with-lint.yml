@@ -1,4 +1,0 @@
----
-# missing a task name
-- ansible.builtin.assert:
-    fail_msg: foo

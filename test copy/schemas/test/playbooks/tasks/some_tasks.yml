@@ -1,8 +1,0 @@
-- name: foo
-  debug:
-    msg: bar
-  delegate_facts: true
-
-- block:
-    - debug:
-        msg: "block under one level of block"

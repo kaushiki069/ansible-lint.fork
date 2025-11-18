@@ -1,5 +1,0 @@
-- action: foo
-  throttle: 1 # valid
-
-- action: foo
-  throttle: "{{ 1 }}" # valid

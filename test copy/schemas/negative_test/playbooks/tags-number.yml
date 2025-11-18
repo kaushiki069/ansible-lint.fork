@@ -1,2 +1,0 @@
-- hosts: localhost
-  tags: 123 # <-- not allowed

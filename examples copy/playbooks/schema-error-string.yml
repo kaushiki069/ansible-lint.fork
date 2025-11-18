@@ -1,4 +1,0 @@
----
-foo
-# This file is valid YAML but from our point of view is an error, as is
-# neither a Sequence or a Mapping.

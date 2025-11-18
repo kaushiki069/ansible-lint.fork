@@ -1,3 +1,0 @@
-- hosts: localhost
-  tasks:
-    - local_action: [] # <-- only string or dict is allowed

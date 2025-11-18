@@ -1,1 +1,0 @@
-../../src/ansiblelint/rules/no_prompting.md

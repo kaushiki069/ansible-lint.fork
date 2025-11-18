@@ -1,1 +1,0 @@
-../../src/ansiblelint/rules/empty_string_compare.md

@@ -1,4 +1,0 @@
----
-- name: some playbook with incorrect name # <- should raise name[casing]
-  hosts: localhost
-  tasks: []

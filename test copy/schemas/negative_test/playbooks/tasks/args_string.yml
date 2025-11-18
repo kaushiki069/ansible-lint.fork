@@ -1,2 +1,0 @@
-- action: foo
-  args: "{{ }}123" # invalid as only full jinja2 expressions are allowed

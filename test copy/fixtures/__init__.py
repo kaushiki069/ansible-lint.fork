@@ -1,1 +1,0 @@
-"""Fixtures used in tests."""

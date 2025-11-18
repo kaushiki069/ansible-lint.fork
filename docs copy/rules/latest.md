@@ -1,1 +1,0 @@
-../../src/ansiblelint/rules/latest.md

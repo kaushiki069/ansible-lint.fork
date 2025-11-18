@@ -1,4 +1,0 @@
----
-- name: Foo
-  debug:
-    msg: "Hello!"

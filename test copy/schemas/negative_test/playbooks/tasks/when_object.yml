@@ -1,2 +1,0 @@
-- action: foo
-  when: {} # invalid, object is not accepted

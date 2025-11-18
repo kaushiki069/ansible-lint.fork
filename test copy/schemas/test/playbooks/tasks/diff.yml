@@ -1,4 +1,0 @@
-- action: foo
-  diff: true
-- action: foo
-  diff: "{{ true }}"

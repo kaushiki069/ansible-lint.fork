@@ -1,2 +1,0 @@
-plugins/module_utils/ansible_example_module.py validate-modules:deprecation-mismatch         # comment
-tests/unit/file.py import-3.6!skip

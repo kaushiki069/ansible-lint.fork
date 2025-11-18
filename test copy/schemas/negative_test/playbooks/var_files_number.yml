@@ -1,4 +1,0 @@
----
-- name: var_files should not accept number
-  hosts: localhost
-  vars_files: 0

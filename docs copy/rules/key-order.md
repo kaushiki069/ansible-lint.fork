@@ -1,1 +1,0 @@
-../../src/ansiblelint/rules/key_order.md

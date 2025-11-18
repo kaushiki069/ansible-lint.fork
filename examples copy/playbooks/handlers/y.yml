@@ -1,3 +1,0 @@
----
-- name: Funny handler
-  action: service name=funny state=started force=true

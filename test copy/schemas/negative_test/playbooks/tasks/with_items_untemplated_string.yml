@@ -1,2 +1,0 @@
-- command: echo 123
-  with_items: foobar # invalid, probably user wanted "{{ foobar }}"?

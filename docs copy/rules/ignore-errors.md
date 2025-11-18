@@ -1,1 +1,0 @@
-../../src/ansiblelint/rules/ignore_errors.md

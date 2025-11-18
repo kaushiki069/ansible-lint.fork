@@ -1,8 +1,0 @@
----
-- name: "Example without run_once"
-  hosts: all
-  gather_facts: false
-  tasks:
-    - name: Task without run_once
-      ansible.builtin.debug:
-        msg: "Test"

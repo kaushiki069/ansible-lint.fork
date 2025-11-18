@@ -1,5 +1,0 @@
----
-- name: Fixture
-  hosts: all
-  roles:
-    - include_miss

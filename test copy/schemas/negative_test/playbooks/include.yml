@@ -1,3 +1,0 @@
-- hosts: localhost
-  tasks:
-    - include: foo.yml # <-- removed in Ansible 2.16
