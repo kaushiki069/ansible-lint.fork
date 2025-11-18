@@ -426,19 +426,36 @@ jobs:
               echo "Current labels: $CURRENT_LABELS"
               
               # Remove old type:* and severity:* labels and old type labels
+              # Collect all labels to remove first, then remove them
+              LABELS_TO_REMOVE=""
               if [ -n "$CURRENT_LABELS" ]; then
-                for label in $(echo "$CURRENT_LABELS" | tr ',' '\n'); do
-                  if [[ "$label" == type:* ]] || [[ "$label" == severity:* ]] || \
-                     [[ "$label" == "Type : "* ]] || [[ "$label" == "Severity : "* ]] || \
+                # Get labels as JSON array for better processing
+                LABELS_JSON=$(gh issue view "$ISSUE_NUMBER" --json labels --jq '.labels[].name')
+                while IFS= read -r label; do
+                  # Check if label matches patterns we want to remove
+                  if echo "$label" | grep -qE "^(type:|severity:|Type : |Severity : )" || \
                      [[ "$label" == "Bug" ]] || [[ "$label" == "Enhancement" ]] || \
                      [[ "$label" == "Feature request" ]] || [[ "$label" == "Documentation" ]] || \
                      [[ "$label" == "Question" ]] || [[ "$label" == "Task" ]] || \
                      [[ "$label" == "Critical" ]] || [[ "$label" == "High" ]] || \
                      [[ "$label" == "Medium" ]] || [[ "$label" == "Low" ]]; then
+                    if [ -z "$LABELS_TO_REMOVE" ]; then
+                      LABELS_TO_REMOVE="$label"
+                    else
+                      LABELS_TO_REMOVE="$LABELS_TO_REMOVE $label"
+                    fi
+                  fi
+                done <<< "$LABELS_JSON"
+                
+                # Remove all collected labels
+                if [ -n "$LABELS_TO_REMOVE" ]; then
+                  for label in $LABELS_TO_REMOVE; do
                     echo "Removing old label: $label"
                     gh issue edit "$ISSUE_NUMBER" --remove-label "$label" || echo "Failed to remove label: $label"
-                  fi
-                done
+                  done
+                  # Wait a moment for label removal to complete
+                  sleep 1
+                fi
               fi
               
               # Add new labels with colors and descriptions
