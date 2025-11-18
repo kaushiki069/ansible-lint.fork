@@ -7,7 +7,7 @@
 
 `ansible-lint` checks playbooks for practices and behavior that could
 potentially be improved. As a community-backed project ansible-lint supports
-only the last two major versions of Ansible. 
+only the last two major versions of Ansible.  
 
 [Visit the Ansible Lint docs site](https://ansible.readthedocs.io/projects/lint/)
 
